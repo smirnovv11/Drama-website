@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    margin-right: 12rem;
+}
+
+.textbox {
+    background: transparent;
+    border: none;
+    font-size: 12pt;
+    font-family: var(--text-reg);
+    background-color: #fff;
+    padding: 4px 0px 4px 12px;
+    border-radius: 14px 0px 0px 14px;
+}
+.textbox:focus {
+    outline: none;
+}
+
+.search_btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 0px 14px 14px 0px;
+    padding: 0px 10px;
+    transition: 0.15s ease-in-out;
+}
+.search_btn:hover {
+    background-color: #f5f5f5;
+}
+.search_btn img {
+    width: 16px;
+}

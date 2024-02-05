@@ -1,7 +1,29 @@
 body, html {
   margin: 0;
+  overflow-x: hidden;
+  background-color: var(--black);
+}
+
+@font-face {
+  font-family: mainFont;
+  src: url('./fonts/SF-Pro-Display-Bold.otf');
+}
+@font-face {
+  font-family: titleFont;
+  src: url('./fonts/SF-Pro-Display-Bold.otf');
+}
+@font-face {
+  font-family: paragrafFont;
+  src: url('./fonts/SF-Pro-Display-Medium.otf');
+}
+@font-face {
+  font-family: regText;
+  src: url('./fonts/SF-Pro-Display-Regular.otf');
 }
 
 :root {
-  
+  --text: paragrafFont;
+  --title: titleFont;
+  --text-reg: regText;
+  --black: #1a1a1a;
 }

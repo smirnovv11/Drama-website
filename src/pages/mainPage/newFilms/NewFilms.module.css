@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.container h2 {
+    margin: 50px 20px;
+    font-family: var(--title);
+    font-size: 32pt;
+}
+
+.newfilms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 0px 60px;
+}
+.film {
+    width: 300px;
+    cursor: pointer;
+}

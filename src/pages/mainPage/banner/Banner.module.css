@@ -2,11 +2,13 @@
     width: 100%;
     height: 600px;
     background-color: black;
+    background-image: url('./img/swan.jpg');
     background-repeat: no-repeat;
 }
 
 .image {
-    background-image: url('./img/swan.png');
+    background-image: url('./img/swan.jpg');
+    filter: blur(4px);
     width: 100%;
     height: 100%;
 }

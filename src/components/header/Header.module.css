@@ -7,9 +7,14 @@
     align-items: center;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%);
-    height: 60px;
+    height: 70px;
     color: #fff;
-    padding: 0px 0px 16px 0px;
+    padding: 0px 4px 16px 0px;
+    transition: 0.3s background ease-in-out;
+}
+.container_active {
+    background-color: rgb(10, 10, 10);
+    padding-bottom: 4px;
 }
 
 .nav_block {
@@ -22,7 +27,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 8rem;
+    margin-left: var(--page-marg);
 }
 .logo {
     width: 16px;

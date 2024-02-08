@@ -39,4 +39,5 @@
 }
 .film_name:hover {
     text-decoration: underline;
+    color: var(--color);
 }

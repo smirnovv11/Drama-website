@@ -1,9 +1,26 @@
-import style from './FilmCollection.module.css'
+import styles from './FilmCollection.module.css'
 
 const FilmCollection = () => {
     return (
-        <div className={style.container}>
-            <h2>Huge film collection</h2>
+        <div className={styles.container}>
+            <marquee className={styles.films_img}>
+                <img src='./img/films.png'/>
+            </marquee>
+            <h2>Drama's library collection</h2>
+            <div className={styles.content}>
+                <div className={styles.collection_count}>
+                    <p className={styles.film_count}>10 000</p>
+                    <p className={styles.par}>Films & series</p>
+                </div>
+                <div className={styles.advantages}>
+                    <h3 className={styles.subtitle}>Huge collection:</h3>
+                    <p className={styles.advantage}>Our website offers a huge film library that contains thousands of films and series.</p>
+                    <h3 className={styles.subtitle}>Quick search:</h3>
+                    <p className={styles.advantage}>Easy and quick search can help you to find content you're looking for.</p>
+                    <h3 className={styles.subtitle}>Browse by categories:</h3>
+                    <p className={styles.advantage}>A lot of different categories aid you to browse more and more accurate.</p>
+                </div>
+            </div>
         </div>
     )
 }

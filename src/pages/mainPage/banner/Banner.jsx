@@ -7,7 +7,7 @@ const Banner = () => {
             <div className={styles.shadow}/>
             <div className={styles.content}>
                     <img src='./img/logo.png'/>
-                    <p>"Черный лебедь" 16+</p>
+                    <p>"Black Swan" 16+</p>
                     <div className={styles.raiting}>
                         <div className={styles.rate}>
                             <img src='./img/KP.png'/>
@@ -17,14 +17,14 @@ const Banner = () => {
                             <img src='./img/IMDb.png'/>
                             <p>8.0</p>
                         </div>
-                        <p>Драма, триллер</p>
+                        <p>Drama, Thriller</p>
                     </div>
-                    <p>У примы балетного театра неожиданно появляется опасная конкурентка, способная отобрать у неё все партии. 
-                        Соперничество усиливается по мере приближения ответственного выступления.</p>
+                    <p>Nina is a talented but unstable ballerina on the verge of stardom. 
+                        Pushed to the breaking point by her artistic director and a seductive rival, Nina's grip on reality slips, plunging her into a waking nightmare.</p>
                     <div className={styles.short_info}>
-                        <p>103 мин.</p>
+                        <p>103 min.</p>
                         <p>&nbsp;/&nbsp;</p>
-                        <p>2010 г.</p>
+                        <p>2010 y.</p>
                     </div>
             </div>
         </div>

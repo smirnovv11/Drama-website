@@ -30,4 +30,5 @@ body, html {
   --page-marg: 8rem;
   --title-size: 28pt;
   --text-size: 12pt;
+  --color: rgb(13, 198, 161);
 }

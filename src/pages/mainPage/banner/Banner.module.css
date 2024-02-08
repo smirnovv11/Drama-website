@@ -4,11 +4,65 @@
     background-color: black;
     background-image: url('./img/swan.jpg');
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .image {
+    position: absolute;
+    bottom: 4px;
     background-image: url('./img/swan.jpg');
-    filter: blur(4px);
+    background-repeat: no-repeat;
+    filter: blur(3px);
     width: 100%;
     height: 100%;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    padding: 70px var(--page-marg) 70px var(--page-marg);
+    color: #fff;
+    font-family: var(--text-reg);
+    width: 50%;
+    gap: 14px;
+}
+.content img {
+    width: 256px;
+    margin-bottom: 18px;
+}
+.short_info {
+    display: flex;
+    opacity: 1;
+
+}
+.content p {
+    font-size: var(--text-size);
+    opacity: 0.8;
+    margin: 0;
+}
+
+.raiting {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+.rate {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+.rate img {
+    width: 32px;
+    margin-bottom: 0px;
 }

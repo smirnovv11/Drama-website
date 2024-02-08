@@ -5,11 +5,12 @@
     background-image: url('./img/swan.jpg');
     background-repeat: no-repeat;
     position: relative;
+    overflow: hidden;
 }
 
 .image {
     position: absolute;
-    bottom: 4px;
+    bottom: 0;
     background-image: url('./img/swan.jpg');
     background-repeat: no-repeat;
     filter: blur(3px);

@@ -10,7 +10,7 @@
     height: 70px;
     color: #fff;
     padding: 0px 4px 16px 0px;
-    transition: 0.3s background ease-in-out;
+    transition: 0.4s background ease-in-out;
 }
 .container_active {
     background-color: rgb(10, 10, 10);

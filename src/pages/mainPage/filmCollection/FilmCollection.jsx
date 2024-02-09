@@ -28,7 +28,7 @@ const FilmCollection = () => {
                         <h3 className={styles.subtitle}>Quick search:</h3>
                         <p className={styles.advantage}>Easy and quick search can help you to find content you're looking for.</p>
                         <h3 className={styles.subtitle}>Browse by categories:</h3>
-                        <p className={styles.advantage}>A lot of different categories aid you to browse more and more accurate.</p>
+                        <p className={styles.advantage}>A lot of different categories aids you to browse more and more accurate.</p>
                     </div>
                 </AnimatedDiv>
             </div>

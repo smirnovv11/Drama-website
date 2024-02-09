@@ -25,7 +25,8 @@
     border-radius: 15px;
     background-color: rgba(10, 10, 10, 0.9);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
     z-index: 1;
 }

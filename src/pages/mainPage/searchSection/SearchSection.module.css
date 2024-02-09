@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 20px var(--page-marg);
+    font-family: var(--title);
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 20pt;
+    margin-bottom: 30px;
+}
+
+.search_div {
+    width: 40%;
+    padding: 2rem;
+    height: 240px;
+    border-radius: 15px;
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

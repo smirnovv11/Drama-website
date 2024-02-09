@@ -12,10 +12,10 @@ const FilmCollection = () => {
             </div>
             <h2>Drama's library collection</h2>
             <div className={styles.content}>
-                <div className={styles.collection_count}>
+                <AnimatedDiv duration='1' className={styles.collection_count}>
                     <p className={styles.film_count}>10 000</p>
                     <p className={styles.par}>Films & series</p>
-                </div>
+                </AnimatedDiv>
                 <AnimatedDiv duration='1' style={{
                     display: 'flex',
                     flexDirection: 'column',

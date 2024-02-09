@@ -1,0 +1,65 @@
+.container {
+    background-color: black;
+    padding: 40px var(--page-marg);
+    color: #fff;
+}
+
+.navigation_info_div {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    opacity: 0.8;
+}
+.logo {
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+}
+.title {
+    margin: 0;
+    font-family: mainFont;
+    pointer-events: none;
+    user-select: none;
+    font-size: 32pt;
+}
+
+.navigation_div {
+    display: flex;
+    gap: 50px
+}
+
+.social {
+    display: flex;
+    gap: 12px;
+}
+.social img {
+    opacity: 0.6;
+    width: 32px;
+}
+.social img:hover {
+    opacity: 0.8;
+}
+
+.line{
+    opacity: 0.5;
+}
+
+.description {
+    opacity: 0.8;
+    font-family: var(--text-reg);
+    margin-top: 4px;
+}
+
+.bottom_info {
+    opacity: 0.8;
+    font-family: var(--text-reg);
+    text-align: center;
+}

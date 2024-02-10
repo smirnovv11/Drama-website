@@ -7,10 +7,10 @@ import { useState } from 'react'
 
 const SearchSection = () => {
 
-    const [searchLine, setLine] = useState(null)
+    const [searchLine, setLine] = useState('')
 
-    const onValueChange = () => {
-        
+    const handleChange = (e) => {
+        setLine(() => e.target.value)
     }
 
     return (
@@ -20,7 +20,7 @@ const SearchSection = () => {
             </div>
             <h2 className={styles.title}>SEARCH CONTENT YOU WANT</h2>
             <div className={styles.search_div}>
-                <SearchBar value={searchLine} width='100%' style={{margin: 0, width: '100%'}}/>
+                <SearchBar value={searchLine} onChange={handleChange} width='100%' style={{margin: 0, width: '100%'}}/>
                 <Button style={{alignSelf: 'flex-end'}}>Clear search</Button>
             </div>
         </div>

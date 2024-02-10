@@ -39,3 +39,23 @@
     bottom: 0;
     left: 0;
 }
+
+
+@media (width <= 1100px) {
+    .search_div {
+        width: 55%;
+    }
+}
+@media (width <= 650px) {
+    .search_div {
+        width: 70%;
+    }
+    .title {
+        font-size: 18pt;
+    }
+}
+@media (width <= 500px) {
+    .animation {
+        transform: scale(1.2);
+    }
+}

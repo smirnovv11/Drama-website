@@ -32,11 +32,9 @@
     font-family: var(--title);
     text-transform: uppercase;
     font-size: var(--title-size);
-    position: absolute;
 }
 
 .content {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,6 +97,7 @@
     pointer-events: none;
     z-index: 0;
     white-space: nowrap;
+    position: absolute;
 }
 .films_img img {
     display: inline-block;
@@ -110,4 +109,70 @@
 @keyframes marquee {
     0% { transform: translateX(0%); }
     100% { transform: translateX(-100%); }
+}
+
+@media (width <= 1340px) {
+    .advantages {
+        margin-left: 30px;
+        width: 40%;
+    }
+    .film_count {
+        font-size: 44pt;
+    }
+}
+
+@media (width <= 900px) {
+    .container {
+        height: auto;
+    }
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .film_count, .par{
+        margin: 0;
+    }
+    .par {
+        text-align: center;
+    }
+    .advantages {
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        margin: 20px;
+        width: 60%;
+    }
+    .films_img {
+        transform: scale(1.5) translateY(20%) rotate(-30deg);
+    }
+}
+@media (width <= 550px) {
+    .advantages {
+        transform: scale(0.9);
+        width: 80%;
+    }
+    .container h2 {
+        font-size: 16pt;
+        margin-top: 30px;
+    }
+}
+@media (width <= 550px) {
+    .container h2 {
+        font-size: 14pt;
+    }
+}
+@media (width <= 350px) {
+    .container h2 {
+        font-size: 12pt;
+    }
+    .film_count {
+        font-size: 34pt;
+    }
+    .par {
+        font-size: 12pt;
+    }
+    .subtitle {
+        font-size: 18pt;
+    }
 }

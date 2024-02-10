@@ -41,3 +41,14 @@
     text-decoration: underline;
     color: var(--color);
 }
+
+@media (width <= 1100px) {
+    .newfilms {
+        gap: 30px;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .film_name {
+        font-size: 10pt;
+    }
+}

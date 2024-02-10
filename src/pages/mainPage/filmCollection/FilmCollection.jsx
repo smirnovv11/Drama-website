@@ -16,21 +16,18 @@ const FilmCollection = () => {
                     <p className={styles.film_count}>10 000</p>
                     <p className={styles.par}>Films & series</p>
                 </AnimatedDiv>
-                <AnimatedDiv duration='1' style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignSelf: 'flex-end',
-                    justifyContent: 'flex-end',
-                    }}>
-                    <div className={styles.advantages}>
+                <div className={styles.advantages}>
+                    <AnimatedDiv duration='1'>
+                        
                         <h3 className={styles.subtitle}>Huge collection:</h3>
                         <p className={styles.advantage}>Our website offers a huge film library that contains thousands of films and series.</p>
                         <h3 className={styles.subtitle}>Quick search:</h3>
                         <p className={styles.advantage}>Easy and quick search can help you to find content you're looking for.</p>
                         <h3 className={styles.subtitle}>Browse by categories:</h3>
                         <p className={styles.advantage}>A lot of different categories aids you to browse more and more accurate.</p>
-                    </div>
-                </AnimatedDiv>
+                    
+                    </AnimatedDiv>
+                </div>
             </div>
         </div>
     )

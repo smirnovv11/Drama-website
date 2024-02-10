@@ -32,3 +32,14 @@ body, html {
   --text-size: 12pt;
   --color: rgb(30, 215, 178);
 }
+
+@media (width <= 900px) {
+    :root {
+      --title-size: 22pt
+    }
+}
+@media (width <= 600px) {
+  :root {
+    --page-marg: 3rem;
+  }
+}

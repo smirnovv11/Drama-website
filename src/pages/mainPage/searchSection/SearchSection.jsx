@@ -21,7 +21,7 @@ const SearchSection = () => {
             <h2 className={styles.title}>SEARCH CONTENT YOU WANT</h2>
             <div className={styles.search_div}>
                 <SearchBar value={searchLine} onChange={handleChange} width='100%' style={{margin: 0, width: '100%'}}/>
-                <Button style={{alignSelf: 'flex-end'}}>Clear search</Button>
+                <Button onClick={() => { setLine(() => '')}} style={{alignSelf: 'flex-end'}}>Clear search</Button>
             </div>
         </div>
     )

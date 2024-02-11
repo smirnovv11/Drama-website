@@ -155,6 +155,7 @@
     .container h2 {
         font-size: 16pt;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 @media (width <= 550px) {

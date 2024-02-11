@@ -63,3 +63,34 @@
     font-family: var(--text-reg);
     text-align: center;
 }
+
+@media (width <= 1250px) {
+    .navigation_info_div {
+        flex-direction: column;
+    }
+}
+@media (width <= 750px) {
+    .title_container {
+        justify-content: center;
+    }
+    .description {
+        text-align: center;
+    }
+}
+@media (width <= 500px) {
+    .navigation_div {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .social {
+        align-self: center;
+    }
+    .description {
+        font-size: 10pt;
+        margin-bottom: 10px;
+    }
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}

@@ -9,7 +9,7 @@ const Header = () => {
     const [navbarVisability, setNavbarVisability] = useState(false)
 
     const changeBackground = () => {
-        if(window.scrollY >= 500) {
+        if(window.scrollY >= 700) {
             setNavbar(true);
         } else {
             setNavbar(false);
@@ -33,12 +33,15 @@ const Header = () => {
     if (windowWidth <= 1100) {
         return (
             <div className={navbar ? `${styles.container} ${styles.container_active}` : `${styles.container}`}>
+                <div className={navbarVisability ? `${styles.blur_active}` : `${styles.blur}`}
+                    onClick={() => setNavbarVisability(false)}
+                ></div>
                 <div className={styles.burger}>
                     <div className={styles.title_container}>
                         <div className={styles.logo}></div>
                         <h2 className={styles.title}>DRAMA</h2>
                     </div>
-                    <img src='./img/more.png' onClick={() => setNavbarVisability(!navbarVisability)}/>
+                    <img src={navbarVisability ? './img/cross.svg' : './img/menu.svg'} onClick={() => setNavbarVisability(!navbarVisability)}/>
                 </div>
                 <div className={navbarVisability ? `${styles.nav_menu_active}` : `${styles.nav_menu}`}>
                     <NavMenu style={{
@@ -48,9 +51,7 @@ const Header = () => {
                         'zIndex': '200'
                     }}/>
                 </div>
-                <div className={navbarVisability ? `${styles.blur_active}` : `${styles.blur}`}
-                    onClick={() => setNavbarVisability(false)}
-                ></div>
+                
             </div>
         )
     }

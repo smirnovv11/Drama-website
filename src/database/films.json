@@ -1,0 +1,32 @@
+{
+    "Black Swan": {
+        "title": "Black Swan",
+        "logo": "swan_logo.png",
+        "poster": "swan_poster.jpg",
+        "desc": "Nina is a talented but unstable ballerina on the verge of stardom. Pushed to the breaking point by her artistic director and a seductive rival, Nina's grip on reality slips, plunging her into a waking nightmare.",
+        "IMDb": "8.0",
+        "KP": "7.7",
+        "age": "16+",
+        "genres": {
+            "genre1": "Drama",
+            "genre2": "Thriller"
+        },
+        "timing": "103",
+        "relYear": "2010"
+    },
+    "Saltburn": {
+        "title": "Saltburn",
+        "logo": "Saltburn_logo.png",
+        "poster": "Saltburn_poster.png",
+        "desc": "A student at Oxford University finds himself drawn into the world of a charming and aristocratic classmate, who invites him to his eccentric family's sprawling estate for a summer never to be forgotten.",
+        "IMDb": "7.0",
+        "KP": "7.1",
+        "age": "18+",
+        "genres": {
+            "genre1": "Comedy",
+            "genre2": "Drama"
+        },
+        "timing": "131",
+        "relYear": "2023"
+    }
+}

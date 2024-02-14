@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className={styles.line}/>
-            <p className={styles.bottom_info}>Made by Danila Smirovv / 2024 y.</p>
+            <p className={styles.bottom_info}>Made by Danila Smirnoff / 2024 y.</p>
         </div>
     )
 }

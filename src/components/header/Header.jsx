@@ -33,16 +33,24 @@ const Header = () => {
     if (windowWidth <= 1100) {
         return (
             <div className={navbar ? `${styles.container} ${styles.container_active}` : `${styles.container}`}>
-                <div className={styles.nav_block}>
-                    <div className={styles.burger}>
-                        <div className={styles.title_container}>
-                            <div className={styles.logo}></div>
-                            <h2 className={styles.title}>DRAMA</h2>
-                        </div>
-                        <img src='./img/more.png' onClick={() => setNavbarVisability(!navbarVisability)}/>
+                <div className={styles.burger}>
+                    <div className={styles.title_container}>
+                        <div className={styles.logo}></div>
+                        <h2 className={styles.title}>DRAMA</h2>
                     </div>
-                    <NavMenu/>
+                    <img src='./img/more.png' onClick={() => setNavbarVisability(!navbarVisability)}/>
                 </div>
+                <div className={navbarVisability ? `${styles.nav_menu_active}` : `${styles.nav_menu}`}>
+                    <NavMenu style={{
+                        'flexDirection': 'column',
+                        'width': '100%',
+                        'backgroundColor': 'black',
+                        'zIndex': '200'
+                    }}/>
+                </div>
+                <div className={navbarVisability ? `${styles.blur_active}` : `${styles.blur}`}
+                    onClick={() => setNavbarVisability(false)}
+                ></div>
             </div>
         )
     }

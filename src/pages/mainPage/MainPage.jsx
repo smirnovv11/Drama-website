@@ -1,9 +1,10 @@
-import { Carousel } from 'antd'
 import styles from './MainPage.module.css'
-import Banner from './banner/Banner'
-import FilmCollection from './filmCollection/FilmCollection'
-import NewFilms from './newFilms/NewFilms'
-import SearchSection from './searchSection/SearchSection'
+import { lazy } from 'react'
+
+const Banner = lazy(() => import('./banner/Banner'))
+const NewFilms = lazy(() => import('./newFilms/NewFilms'))
+const FilmCollection = lazy(() => import('./filmCollection/FilmCollection'))
+const SearchSection = lazy(() => import('./searchSection/SearchSection'))
 
 const MainPage = () => {
     return (
